@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
-@import "./mediaQuerys.css";
 *{
     padding: 0;
     margin: 0;
@@ -462,4 +461,80 @@ input[type=number]::-webkit-outer-spin-button {
 	border:1px solid #dcdcdc;
 	font-size:15px;
     font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+/* Index */
+@media screen and (min-width:320px) and (max-width: 382px) {
+    .logo img{
+        width: 1em !important;
+    }
+
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+        grid-auto-rows: 100px !important;
+        grid-gap: 10px;
+        place-items: center !important;
+    }
+
+    .grid-items img{
+        width: 100% !important;
+        height:  10em!important;
+        object-fit: cover;
+    }
+
+    
+    .productos__precio h3{
+        font-size: 1.2em;
+    }
+
+    .grid-items{
+        width: 100% !important;
+        height: 24em !important;
+        margin-bottom: 70px;
+    }   
+    .servicios{
+        margin-top: 400px !important;
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width: 767px){
+    .grid-items img{
+        width: 100% !important;
+        height:  10em!important;
+        object-fit: cover;
+    }
+
+    .grid-items{
+        width: 100% !important;
+        height: 20em !important;
+    }    
+    
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+    }
+
+    .servicios{
+        margin-top: 300px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .grid-items img{
+        width: 100% !important;
+        height:  16em !important;
+    }
+    .grid-items{
+        height: 27rem !important;
+    }
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+        grid-auto-rows: 100px !important;
+        grid-gap: 1px;
+        place-items: center !important;
+    }
+
+    .servicios{
+        margin-top: 550px !important;
+    }
 }
