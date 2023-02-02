@@ -470,6 +470,10 @@ input[type=number]::-webkit-outer-spin-button {
         width: 1em !important;
     }
 
+    .banner div h1{
+        font-size: 1.1em;
+    }
+
     .productos-grid{
         grid-template-columns: repeat(2, 50%) !important;
         grid-auto-rows: 100px !important;
@@ -483,7 +487,6 @@ input[type=number]::-webkit-outer-spin-button {
         object-fit: cover;
     }
 
-    
     .productos__precio h3{
         font-size: 1.2em;
     }
@@ -492,9 +495,14 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100% !important;
         height: 24em !important;
         margin-bottom: 70px;
-    }   
+    }
+
     .servicios{
         margin-top: 400px !important;
+    }
+
+    .whatsapp{
+        right: 5px;
     }
 }
 
@@ -536,5 +544,71 @@ input[type=number]::-webkit-outer-spin-button {
 
     .servicios{
         margin-top: 550px !important;
+    }
+
+    .whatsapp{
+        right: 5px;
+    }
+}
+
+/* Contacto */
+@media screen and (min-width:320px) and (max-width: 382px){
+    .logo img{
+        width: 2.5em !important;
+    }
+
+    .logo a{
+        font-size: 1.3em !important;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto__imagen{
+        width: 100%;
+        margin: 0 auto 20px auto;       
+    }
+
+    .contacto form{
+        margin: 20px 0 20px 0 !important;
+    }
+
+    .whatsapp{
+        right: 5px;
+    }
+}
+
+@media screen and (min-width: 383px) and (max-width: 767px){
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto__imagen{
+        width: 100%;
+        margin: 0 auto 20px auto;       
+    }
+
+    .contacto form{
+        margin: 20px 0 20px 0 !important;
+    }
+
+    .whatsapp{
+        right: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto form{
+        width: 70%;
+        margin: 20px 0 20px 0 !important;
+    }
+
+    .map{
+        width: 80%;
     }
 }
