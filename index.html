@@ -1,159 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Capricci | Heladería Artesanal</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Heladeria</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-pink navbar-dark">
-      <div class="container-fluid">
-        <div class="logo">
-          <a class="link-logo text-menu" href="../index.html"><img src="./img/logo.png" alt="Logo" />Heladería Capricci
-          </a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-pink navbar-dark">
+        <div class="container-fluid">
+          <div class="logo">
+            <a class="link-logo text-menu" href="../index.html"
+              ><img src="./img/logo.png" alt="Logo" />Heladería Capricci
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link text-menu" href="./pages/sabores.html"
+                  >Sabores</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-menu" href="./pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-menu" href="./pages/trabaja.html"
+                  >Envía tu CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-menu" href="./pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link text-menu" href="./pages/sabores.html">Sabores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-menu" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-menu" href="./pages/trabaja.html">Envía tu CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-menu" href="./pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div>
+          <h1>El lugar perfecto para darte un capricho</h1>
+          <h3>¡Abierto todos los días!</h3>
         </div>
+      </section>
+      <section class="productos">
+        <h2 class="titulo">🍨 TE OFRECEMOS 🍨</h2>
+        <div class="container">
+          <div class="productos-grid">
+            <div class="grid-items">
+              <img src="./img/conos.jpg" alt="Cono helado" />
+              <div class="productos__precio">
+                <h3 class="margin">CONOS</h3>
+                <p>Precio: $300</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <img src="./img/vasito.jpg" alt="Vasito" />
+              <div class="productos__precio">
+                <h3 class="margin">VASITOS</h3>
+                <p>Precio: $380</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <img src="./img/milkshakes.jpg" alt="Bebida Milkshake" />
+              <div class="productos__precio">
+                <h3 class="margin">MILKSHAKE</h3>
+                <p>Precio: $400</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <img src="./img/pote.jpg" alt="Pote helado" />
+              <div class="productos__precio">
+                <h3>POTES</h3>
+                <p>Precio 1/4kg: $450</p>
+                <p>Precio 1/2kg: $700</p>
+                <p>Precio 1kg: $1000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="servicios">
+        <h2 class="titulo marginTop">🛵 SERVICIOS DE ENVÍOS 🛵</h2>
+        <div class="descripcion">
+          <p>¿No podés acercarte a nuestro local?</p>
+          <p>No te preocupes, pedí tu helado desde tu app favorita 😊</p>
+        </div>
+        <div class="servicios-flex">
+          <div>
+            <a href="https://www.rappi.com.ar" target="_blank">
+              <img src="./img/rappi.svg" alt="Rappi" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.pedidosya.com.ar" target="_blank">
+              <img src="./img/pedidosYa.png" alt="PedidosYa" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.ubereats.com" target="_blank">
+              <img src="./img/uberEats.png" alt="Uber Eats" />
+            </a>
+          </div>
+        </div>
+        <p class="descripcion">
+          Comunicándote por whatsapp, ¡El helado te lo llevamos nosotros!
+        </p>
+      </section>
+      <div class="whatsapp">
+        <a href="https://web.whatsapp.com" target="_blank">
+          <img src="./img/whatsapp.png" alt="whatsapp" />
+        </a>
       </div>
-    </nav>
-  </header>
-  <main>
-    <section class="banner">
+    </main>
+    <footer>
+      <section class="flex-center">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="marginTop">
+              <h2 class="footer__texto">
+                Para no perderte nuestras publicaciones.
+              </h2>
+              <h2 class="footer__texto">
+                ¡Seguinos! ❤
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="iconos" src="./img/facebook.svg" alt="Facebook"
+                /></a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img
+                    class="iconos"
+                    src="./img/instagram.png"
+                    alt="Instagram"
+                  />
+                </a>
+              </h2>
+              <h2 class="marginTop footer__texto">
+                <img
+                  src="./img/mapa.png"
+                  alt="icono ubicación"
+                  class="iconos"
+                />
+                Av. Díaz Vélez, C1414 CABA
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.907710283336!2d-58.438214089359136!3d-34.60649515753086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1673315371755!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
       <div>
-        <h1>El lugar perfecto para darte un capricho</h1>
-        <h3>¡Abierto todos los días!</h3>
+        <p class="footer__texto">
+          &copy 2023 Tamara - Todos los derechos reservados
+        </p>
       </div>
-    </section>
-    <section class="productos">
-      <h2 class="titulo">🍨 TE OFRECEMOS 🍨</h2>
-      <div class="container">
-        <div class="productos-grid">
-          <div class="grid-items">
-            <img src="./img/conos.jpg" alt="Cono helado" />
-            <div class="productos__precio">
-              <h3 class="margin">CONOS</h3>
-              <p>Precio: $300</p>
-            </div>
-          </div>
-          <div class="grid-items">
-            <img src="./img/vasito.jpg" alt="Vasito" />
-            <div class="productos__precio">
-              <h3 class="margin">VASITOS</h3>
-              <p>Precio: $380</p>
-            </div>
-          </div>
-          <div class="grid-items">
-            <img src="./img/milkshakes.jpg" alt="Bebida Milkshake" />
-            <div class="productos__precio">
-              <h3 class="margin">MILKSHAKE</h3>
-              <p>Precio: $400</p>
-            </div>
-          </div>
-          <div class="grid-items">
-            <img src="./img/pote.jpg" alt="Pote helado" />
-            <div class="productos__precio">
-              <h3>POTES</h3>
-              <p>Precio 1/4kg: $450</p>
-              <p>Precio 1/2kg: $700</p>
-              <p>Precio 1kg: $1000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="servicios">
-      <h2 class="titulo marginTop">🛵 SERVICIOS DE ENVÍOS 🛵</h2>
-      <div class="descripcion">
-        <p>¿No podés acercarte a nuestro local?</p>
-        <p>No te preocupes, pedí tu helado desde tu app favorita 😊</p>
-      </div>
-      <div class="servicios-flex">
-        <div>
-          <a href="https://www.rappi.com.ar" target="_blank">
-            <img src="./img/rappi.svg" alt="Rappi" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.pedidosya.com.ar" target="_blank">
-            <img src="./img/pedidosYa.png" alt="PedidosYa" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.ubereats.com" target="_blank">
-            <img src="./img/uberEats.png" alt="Uber Eats" />
-          </a>
-        </div>
-      </div>
-      <p class="descripcion">
-        Comunicándote por whatsapp, ¡El helado te lo llevamos nosotros!
-      </p>
-    </section>
-    <div class="whatsapp">
-      <a href="https://web.whatsapp.com" target="_blank">
-        <img src="./img/whatsapp.png" alt="whatsapp" />
-      </a>
-    </div>
-  </main>
-  <footer>
-    <section class="flex-center">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="marginTop">
-            <h2 class="footer__texto">Para no perderte nuestras publicaciones.</h2>
-            <h2 class="footer__texto">
-              ¡Seguinos! ❤
-              <a href="https://www.facebook.com" target="_blank">
-                <img class="iconos" src="./img/facebook.svg" alt="Facebook" /></a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img class="iconos" src="./img/instagram.png" alt="Instagram" />
-              </a>
-            </h2>
-            <h2 class="marginTop footer__texto">
-              <img src="./img/mapa.png" alt="icono ubicación" class="iconos" />
-              Av. Díaz Vélez, C1414 CABA
-            </h2>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.907710283336!2d-58.438214089359136!3d-34.60649515753086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses-419!2sar!4v1673315371755!5m2!1ses-419!2sar"
-            style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-    <div>
-      <p class="footer__texto">&copy 2023 Tamara - Todos los derechos reservados</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
