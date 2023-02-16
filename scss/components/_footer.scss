@@ -1,0 +1,33 @@
+footer{
+    text-align: center;
+    background-color: nth($colores_principales,1);
+    position: relative;
+    padding: nth($pixeles_constantes,3);
+
+    .flex-center{
+        display: flex;
+        justify-content: space-evenly;
+
+        .iconos{
+            width: 1em;
+            height: 1em;
+            margin-right: nth($pixeles_constantes,1);
+        }
+
+        .map{
+            width: 18em;
+            height: 15em;
+            margin-bottom: nth($pixeles_constantes,3);
+        }
+    }
+}
+
+.footer__texto{
+    font-size: 1.5em;
+    color: nth($colores_principales,2);
+    font-weight: 900;
+}
+
+
+
+

@@ -1,0 +1,347 @@
+/* INDEX */
+@media screen and (min-width:320px) and (max-width: 382px){
+    .logo img{
+        width: 1em !important;
+    }
+
+    .banner div h1{
+        font-size: 1.1em;
+    }
+
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+        grid-auto-rows: $mayor_porcentaje !important;
+        grid-gap: 10px;
+        place-items: center !important;
+    }
+
+    .grid-items img{
+        width: $mayor_porcentaje !important;
+        height:  10em!important;
+        object-fit: cover;
+    }
+
+    .productos__precio h3{
+        font-size: 1.2em;
+    }
+
+    .grid-items{
+        width: $mayor_porcentaje !important;
+        height: 24em !important;
+        margin-bottom: 70px;
+    }
+
+    .servicios{
+        margin-top: 400px !important;
+    }
+
+    .whatsapp{
+        right: nth($pixeles_constantes,1);
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width: 767px){
+    .grid-items img{
+        width: $mayor_porcentaje !important;
+        height:  10em!important;
+        object-fit: cover;
+    }
+
+    .grid-items{
+        width: $mayor_porcentaje !important;
+        height: 20em !important;
+    }    
+    
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+    }
+
+    .servicios{
+        margin-top: 300px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .grid-items img{
+        width: $mayor_porcentaje !important;
+        height:  16em !important;
+    }
+    .grid-items{
+        height: 27rem !important;
+    }
+    .productos-grid{
+        grid-template-columns: repeat(2, 50%) !important;
+        grid-auto-rows: 100px !important;
+        grid-gap: 1px;
+        place-items: center !important;
+    }
+
+    .servicios{
+        margin-top: 550px !important;
+    }
+
+    .whatsapp{
+        right: nth($pixeles_constantes,1);
+    }
+}
+
+/* SABORES */
+@media screen and (min-width:320px) and (max-width: 382px){
+    .sabores-row{
+        flex-direction: column;
+        align-items: center;
+        .ancho-div{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .sabores__imagenes{
+            width: 90% !important;
+            height: 15em;
+            margin-bottom: 5%;
+        }
+
+        .sabores__titulo{
+            font-weight: $negrita;
+        }
+
+        .sabores__lista{
+            list-style-type: none;
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width: 767px){
+    .sabores-row{
+        flex-direction: column;
+        align-items: center;
+        .ancho-div{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .sabores__imagenes{
+            width: 50%;
+            height: 15em;
+            margin-bottom: 5%;
+        }
+
+        .sabores__titulo{
+            font-weight: $negrita;
+        }
+
+        .sabores__lista{
+            list-style-type: none;
+            text-align: left;
+            padding-left: 5em;
+        }
+
+        .sabores__lista--active{
+            padding-left: 8em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .sabores-row{
+        flex-direction: column;
+        align-items: center;
+        .ancho-div{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .sabores__imagenes{
+            width: 45% !important;
+            height: 15em;
+            margin-bottom: 5%;
+        }
+
+        .sabores__titulo{
+            font-weight: $negrita;
+        }
+
+        .sabores__lista{
+            list-style-type: none;
+            text-align: left;
+            padding-left: 10em;
+        }
+
+        .sabores__lista--active{
+            padding-left: 10em;
+        }
+    }
+}
+
+/*NOSOTROS*/
+@media screen and (min-width:320px) and (max-width: 370px){
+    .nosotros{
+        width: fit-content;
+        height: initial;
+        flex-direction: column;
+
+        &__info{
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            margin: initial;
+            font-weight: 900;
+        }
+
+        &__imagen{
+            width: 16em;
+            margin: auto;
+            height: 15em;
+        }
+    }
+}
+
+@media screen and (min-width:371px) and (max-width: 991px){
+    .nosotros{
+        width: fit-content;
+        height: initial;
+        flex-direction: column;
+
+        &__info{
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            margin: initial;
+            font-weight: 900;
+        }
+
+        &__imagen{
+            width: 20em;
+            margin: auto;
+            height: 20em;
+        }
+    }
+}
+
+/* CONTACTO */
+@media screen and (min-width:320px) and (max-width: 382px){
+    .logo{
+        img{
+            width: 2.5em !important;
+        }
+
+        a{
+            font-size: 1.3em !important;
+        }
+    }
+
+    .contacto{
+        flex-direction: column;
+        form{
+            margin: 20px 0 20px 0 !important;
+        }
+
+        &__imagen{
+            width: $mayor_porcentaje;
+            margin: 0 auto 20px auto;  
+        } 
+    }
+
+    .whatsapp{
+        right: nth($pixeles_constantes,1);
+    }
+}
+
+@media screen and (min-width: 383px) and (max-width: 767px){
+    .contacto{
+        flex-direction: column;
+        form{
+            margin: 20px 0 20px 0 !important;
+        }
+
+        &__imagen{
+            width: $mayor_porcentaje;
+            margin: 0 auto 20px auto;       
+        }
+    }
+
+    .whatsapp{
+        right: nth($pixeles_constantes,1);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .contacto{
+        flex-direction: column;
+        form{
+            width: 70%;
+            margin: 20px 0 20px 0 !important;
+        }
+    }
+
+    .map{
+        width: 80%;
+    }
+}
+
+/* TRABAJA */
+@media screen and (min-width:320px) and (max-width: 482px){
+    .trabaja__titulo{
+        width: auto !important;
+        margin: 0 5% !important;
+        padding-bottom: 5em !important;
+
+        h1{
+            font-size: 1em;
+            font-weight: $negrita;
+        }
+
+        h2{
+            font-size: 1em;
+            font-weight: $negrita;
+        }
+    }
+
+    .trabaja__subtitulo{
+        width: 80%;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+
+    .trabaja__formulario{
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .trabaja__input{
+            width: 80%;
+            text-align: center;
+        }
+        .trabaja__boton{
+            width: 6em;
+            margin: 3% 0 3% 0;
+        }
+    }
+}
+
+@media screen and (min-width:483px) and (max-width: 991px){
+    .trabaja__titulo{
+        width: auto;
+        margin: 0 5%;
+        padding-top: 10%;
+    }
+
+    .trabaja__formulario{
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .trabaja__input{
+            width: 80%;
+            text-align: center;
+        }
+        .trabaja__boton{
+            width: 6em;
+            margin: 3% 0 3% 0;
+        }
+    }
+}

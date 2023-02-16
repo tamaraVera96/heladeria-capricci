@@ -1,0 +1,39 @@
+/* VARIABLES */
+$mayor_porcentaje: 100%; 
+$negrita: bold;
+
+/* LISTAS */
+$colores_principales:
+rgba(255, 31, 136, 0.83),
+white,
+rgb(129, 128, 128),
+#FFE3E1;
+
+$pixeles_constantes:
+5px,
+15px,
+20px,
+30px,
+50px;
+
+/* EXTENDS */
+%grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5%;
+    place-items: center;
+}
+
+%descripcion{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+/* MIXIN */
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

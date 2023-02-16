@@ -1,0 +1,45 @@
+header{
+    position: sticky;
+    top: 0;
+    .bg-pink{
+        background-color: nth($colores_principales,1);
+        
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1em;
+            font-weight: 900;
+
+            a{
+                display: flex;
+                align-items: center;
+                font-size: 1.3em;
+                
+                img{
+                    width: 3.5em;
+                    margin-right: nth($pixeles_constantes,2);
+                }
+            }
+        }
+    } 
+}
+
+.text-menu{
+    color: nth($colores_principales,2);
+    text-decoration: none !important;
+    font-weight: 900 !important;
+    font-family: 'Raleway', sans-serif !important;
+    text-align: center !important;
+    font-size: 1.5em !important;
+
+    &:hover{
+        color: black;
+    }
+}
+
+.pagina-activa{ 
+    text-decoration-style: double !important;
+    text-decoration-line: underline !important;
+    text-underline-position: under !important;
+}

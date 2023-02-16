@@ -1,0 +1,294 @@
+/* INDEX */
+.banner{
+    background-image: url("../img/portada.jpg");
+    width: $mayor_porcentaje;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flex(flex,center,center);
+    flex-direction: column;
+    color: nth($colores_principales,2);
+
+    div{
+        background-color: rgba(0, 0, 0, 0.267);
+        width: 50%;
+        text-align: center;
+        border-radius: 1em;
+        padding: nth($pixeles_constantes,3);
+        font-size: 1.3em;
+    }
+}
+
+.productos{
+    div{
+        width: 95%;
+        height: 25em;
+        margin: auto;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .container{
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+
+        img{
+            width: 12.7em; 
+            height: 13rem;
+            object-fit: cover;
+        }
+
+        .productos-grid{
+            div{
+                background: nth($colores_principales,2);
+            }
+            
+            @extend %grid;
+
+            .grid-items{
+                width: 90%;
+                box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.45);
+                transition: 1s;
+                cursor: pointer;
+
+                img{
+                    width: $mayor_porcentaje;
+                }
+                .productos__precio{
+                    margin-top: 3%;
+                    height: 30%;
+                    font-weight: 800;
+
+                    h3{
+                        font-weight: 900;
+                    }
+                }
+                &:hover{
+                    width: $mayor_porcentaje !important;
+                    box-shadow: 2px 2px 8px 0px rgba(255,44,133,0.67);
+                }
+            }
+        }
+    }
+}
+
+.servicios{
+    h2{
+        margin-top: 6%;
+    }
+    div{
+        img{
+            width: $mayor_porcentaje;
+            height: 5em;
+        }
+    }
+    &-flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* SABORES */
+.sabores{
+    display: flex;
+    flex-direction: column;
+    &-row{
+        display: flex;
+        align-items: center;
+        background-color: nth($colores_principales,2);
+        margin: 2%;
+        border: 2px solid #c3c6ce75;
+        .ancho-div{
+            width: 30%;
+            margin: 1% auto 3% auto;
+            .sabores__imagenes{
+                width: 60%;
+                height: 15em;
+                border-radius: 50%;
+                border: 5px solid rgba(255, 31, 136, 0.349);
+                margin-top: 5%;
+            }
+            .sabores__titulo{
+                margin-bottom: 10px;
+            }
+            .sabores__lista{
+                list-style-type: circle;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* NOSOTROS */
+.nosotros{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    height: 28em;
+    margin: nth($pixeles_constantes,4);
+
+    &__info{
+        width: 40%;
+        height: auto;
+        margin: 4% 0% 4% 9%;
+        align-items: center;
+        font-weight: 900;
+
+        p{
+            text-align: center;
+        }
+    }
+
+    &__imagen{
+        width: $mayor_porcentaje;
+        height: 25em;  
+    }
+}
+
+/* CONTACTO */
+.contacto{
+    @include flex(flex,center,center);
+    width: 80%;
+    margin: auto;
+
+    div{
+        text-align: center;
+    }
+
+    form{
+        background: rgba(0,0,0,0.1);
+        border: 1px solid nth($colores_principales,3);
+        padding: nth($pixeles_constantes,3);
+        border-radius: 4px; 
+    }
+
+    textarea{
+        width: $mayor_porcentaje;
+        font-family: sans-serif;
+        font-weight: 500;
+        background: whitesmoke;
+        font-size: 1em;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__imagen{
+        width: 60%;
+        margin: nth($pixeles_constantes,2);
+    }
+
+    &__input{
+        width: $mayor_porcentaje;
+        background: whitesmoke;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-weight: 600;
+        border: 1px solid nth($colores_principales,3);
+        font-size: 1em;
+    }
+
+    .boton input{
+        box-shadow:inset 0px 1px 0px 0px nth($colores_principales,2);
+        background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+        background-color:#f9f9f9;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        display:inline-block;
+        cursor:pointer;
+        color:#666666;
+        font-family:Arial;
+        font-size:15px;
+        font-weight:$negrita;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+    
+        &:hover{
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            background-color:#e9e9e9;
+        }
+    }
+}
+
+/* TRABAJA */
+.trabaja__banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0.409)), url(../img/trabajo.jpg);
+    width: $mayor_porcentaje;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flex(flex,center,center);
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .trabaja__titulo{
+        width: 50%;
+        height: 6em;
+        text-align: center;
+        border-radius: 1em;
+        padding: nth($pixeles_constantes,3);
+        padding-bottom: 7em;
+        color: nth($colores_principales,2);
+        font-size: 1.4em;
+        border: 10px double nth($colores_principales,2);
+    }
+}
+
+.trabaja__formulario{
+    width: 80%;
+    margin: auto;
+
+    form{
+        background: #ffffffe6;
+        border: 1px solid nth($colores_principales,3);
+        margin-top: 5%;
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+        border-radius: 4px;
+        @include flex(flex,center,center);
+        flex-wrap: wrap;
+    }
+
+    .trabaja__input{
+        padding: 2%;
+        margin: auto;
+        font-weight: 900;
+        font-size: 1.2em;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        input{
+            margin-top: 5px;
+            padding: 3px;
+            border: 0;
+            border-bottom: 2px solid #452b2b;
+            background: #00000003;
+            /* Ocultar input number*/
+            &[type=number]::-webkit-inner-spin-button, 
+            &[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none; 
+            margin: 0; 
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .trabaja__boton{
+        cursor: pointer;
+        padding: 1%;
+        margin-top: 2%;
+        background-color:#f9f9f9;
+        border-radius:6px;
+        border:1px solid #dcdcdc;
+        font-size:nth($pixeles_constantes,2);
+        font-weight: $negrita;
+    }    
+}
