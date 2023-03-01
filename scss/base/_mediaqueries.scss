@@ -95,19 +95,12 @@
             margin: auto;
             text-align: center;
         }
-        
-        .sabores__imagenes{
-            width: 90% !important;
-            height: 15em;
-            margin-bottom: 5%;
-        }
 
         .sabores__titulo{
             font-weight: $negrita;
         }
 
         .sabores__lista{
-            list-style-type: none;
             text-align: left;
         }
     }
@@ -122,19 +115,12 @@
             margin: auto;
             text-align: center;
         }
-        
-        .sabores__imagenes{
-            width: 50%;
-            height: 15em;
-            margin-bottom: 5%;
-        }
 
         .sabores__titulo{
             font-weight: $negrita;
         }
 
         .sabores__lista{
-            list-style-type: none;
             text-align: left;
             padding-left: 5em;
         }
@@ -153,12 +139,6 @@
             width: 80%;
             margin: auto;
             text-align: center;
-        }
-        
-        .sabores__imagenes{
-            width: 45% !important;
-            height: 15em;
-            margin-bottom: 5%;
         }
 
         .sabores__titulo{
